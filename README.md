@@ -59,4 +59,3 @@ deferred until the core is reviewed and verified.
 2. Read [`docs/00_core/LIFECYCLE.md`](docs/00_core/LIFECYCLE.md).
 3. Select a profile when profiles are added.
 4. Create the first Work Block from the future canonical template.
-# web-delivery-methodology
