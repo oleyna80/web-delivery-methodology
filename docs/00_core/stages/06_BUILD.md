@@ -48,11 +48,11 @@ Builder owns faithful production of the approved result within scope. The Builde
 
 ## Acceptance criteria
 
-- Output satisfies the approved Work Block acceptance criteria.
-- Changed files remain inside the approved write-set.
-- Required checks are run or limitations are recorded.
-- Deviations and residual risks are explicit.
-- Stage Result identifies artifacts changed, evidence, and next recommended action.
+- [ ] Output satisfies the approved Work Block acceptance criteria.
+- [ ] Changed files remain inside the approved write-set.
+- [ ] Required checks are run or limitations are recorded.
+- [ ] Deviations and residual risks are explicit.
+- [ ] Stage Result identifies artifacts changed, evidence, and next recommended action.
 
 ## Checks and evidence
 
@@ -78,14 +78,14 @@ The Orchestrator accepts the Stage Result for routing only. Independent Review d
 
 - Expanding the write-set without approval.
 - Treating successful build as independent review.
-- Modifying dependencies, configuration, security, data, or deployment without authority.
+- Modifying sensitive or approval-gated areas without authority.
 - Failing to report deviations or residual risks.
 
 ## Stop conditions
 
 - Required input is missing, invalid, or contradictory.
 - Work requires paths outside approved write-set.
-- Secrets, production data, destructive operations, auth, payments, migration, dependency, or deployment changes appear without approval.
+- Restricted-scope work appears without the required approval.
 - Required checks cannot be run and no acceptable limitation can be recorded.
 
 ## Next allowed stages
