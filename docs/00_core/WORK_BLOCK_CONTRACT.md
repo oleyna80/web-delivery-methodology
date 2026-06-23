@@ -10,6 +10,13 @@ The Orchestrator is the only writer of Work Block status, execution-log entries,
 review verdicts, acceptance status, and closeout. Builders, reviewers, verifiers,
 and specialist agents return structured Stage Results to the Orchestrator.
 
+## Bootstrap rule
+
+Until the canonical Work Block template exists, repository-maintenance Work
+Blocks may be created in `docs/plans/` using the inline canonical template in
+this document. This bootstrap path is limited to maintaining this methodology
+repository and does not make planned template paths authoritative.
+
 ## Required contract
 
 Every non-trivial Work Block records:
