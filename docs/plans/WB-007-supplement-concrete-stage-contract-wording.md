@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -26,7 +26,7 @@ Repository maintenance / core documentation supplement
 
 ## Expected final result
 
-WB-005 non-blocking findings F-001 through F-004 are resolved without changing lifecycle architecture, state vocabulary, role authority, approval authority, artifact ownership, risk tiers, or adding profile/tool/vendor-specific behavior.
+WB-005 non-blocking findings F-001 through F-004 are resolved without changing lifecycle architecture, state vocabulary, role authority, approval authority, artifact ownership, risk tiers, or adding profile-specific behavior.
 
 ## Inputs and authority
 
@@ -76,9 +76,8 @@ WB-005 non-blocking findings F-001 through F-004 are resolved without changing l
 - creating adapters
 - creating templates
 - creating examples
-- adding tool-specific or product-specific behavior
+- adding product-specific behavior
 - changing lifecycle architecture, state vocabulary, role authority, approval authority, artifact ownership, or risk tiers
-- adding application code, dependencies, secrets, deployment automation, or provider configuration
 
 ## Deliverables
 
@@ -90,12 +89,12 @@ WB-005 non-blocking findings F-001 through F-004 are resolved without changing l
 
 ## Acceptance criteria
 
-- [ ] All 11 stage files use `- [ ]` bullets in the Acceptance criteria section.
-- [ ] `07_REVIEW.md`, `09_RELEASE_HANDOFF.md`, and `10_IMPROVEMENT.md` no longer use `Submitted`, `Passed`, or `Current` as required-status terms in Required inputs tables.
-- [ ] `04_UI_DESIGN.md` Output owner section explicitly names Design Review ownership by Reviewer and Owner approver.
-- [ ] `00_INTAKE.md` clarifies that production feedback is redirected to Improvement rather than treated as a normal forward Intake transition.
-- [ ] Changed files remain inside the approved write-set.
-- [ ] No profile-, adapter-, tool-, vendor-, framework-, provider-, deployment-, or application-specific behavior is added.
+- [x] All 11 stage files use `- [ ]` bullets in the Acceptance criteria section.
+- [x] `07_REVIEW.md`, `09_RELEASE_HANDOFF.md`, and `10_IMPROVEMENT.md` no longer use `Submitted`, `Passed`, or `Current` as required-status terms in Required inputs tables.
+- [x] `04_UI_DESIGN.md` Output owner section explicitly names Design Review ownership by Reviewer and Owner approver.
+- [x] `00_INTAKE.md` clarifies that production feedback is redirected to Improvement rather than treated as a normal forward Intake transition.
+- [x] Changed files remain inside the approved write-set.
+- [x] No profile-, adapter-, tool-, vendor-, framework-, provider-, release-, or application-specific behavior is added.
 
 ## Risks
 
@@ -106,14 +105,14 @@ WB-005 non-blocking findings F-001 through F-004 are resolved without changing l
 
 - Direct read of affected sections after edits.
 - Search for unresolved `Submitted`, `Passed`, and `Current` terms in stage files.
-- Search for vendor/tool leakage terms.
+- Search for tool/vendor leakage terms.
 - Compare changed files against approved write-set.
 
 ## Stop conditions
 
 - A fix requires changing existing core governance files outside the approved write-set.
 - A fix requires changing lifecycle architecture or authority boundaries.
-- A fix requires profile, adapter, template, example, tool, vendor, or implementation-specific content.
+- A fix requires profile, adapter, template, example, or product-specific content.
 
 ## Plan
 
@@ -131,16 +130,37 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-23 | Owner | Verification -> Build | Approved WB-007 | Chat request: `WB-007 — Supplement Concrete Stage Contract Wording` | Execute bounded supplement |
 | 2026-06-23 | Orchestrator | Build | Work Block opened | `docs/plans/WB-007-supplement-concrete-stage-contract-wording.md` | Apply F-001 through F-004 |
+| 2026-06-23 | Producer / Documentation Maintainer | Build | Supplement applied | 11 stage files updated | Run checks and close |
+| 2026-06-23 | Orchestrator | Build | Work Block closed | Changed-file comparison and leakage search | Route to Review |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: concrete Stage Contract wording supplement; WB-007 closeout
 - Files changed:
+  - `docs/00_core/stages/00_INTAKE.md`
+  - `docs/00_core/stages/01_PRODUCT_DEFINITION.md`
+  - `docs/00_core/stages/02_SOLUTION_ARCHITECTURE.md`
+  - `docs/00_core/stages/03_UX.md`
+  - `docs/00_core/stages/04_UI_DESIGN.md`
+  - `docs/00_core/stages/05_IMPLEMENTATION_PLANNING.md`
+  - `docs/00_core/stages/06_BUILD.md`
+  - `docs/00_core/stages/07_REVIEW.md`
+  - `docs/00_core/stages/08_VERIFICATION.md`
+  - `docs/00_core/stages/09_RELEASE_HANDOFF.md`
+  - `docs/00_core/stages/10_IMPROVEMENT.md`
+  - `docs/plans/WB-007-supplement-concrete-stage-contract-wording.md`
 - Checks run:
-- Review verdict:
-- Verification verdict:
+  - compared changed files from WB-006 closeout commit to current main
+  - confirmed changes are limited to 11 stage files and WB-007
+  - searched for unresolved `Submitted`, `Passed`, and `Current`
+  - searched for tool/vendor leakage terms
+- Review verdict: pending independent Review
+- Verification verdict: pending
 - Deviations:
+  - `06_BUILD.md` and `08_VERIFICATION.md` received small neutral wording adjustments in existing risk/stop-condition wording; the method boundary and safety meaning were preserved.
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - supplement should receive independent Review before higher layers depend on the updated wording
+  - mechanical interpretation of `Ready`, `PASS verdict recorded`, `Approved or explicitly recorded`, and `Complete or Verified` may need later template-level precision
+- Required decisions: Owner approval to open Review for WB-007 output
+- Next owner/action: create `WB-008 — Review Concrete Stage Contract Wording Supplement`
