@@ -50,11 +50,11 @@ Orchestrator owns workflow routing and Work Block readiness. Engineering Owner o
 
 ## Acceptance criteria
 
-- Work Blocks are bounded, ordered, and traceable to approved artifacts.
-- Every Work Block has objective, role, expected result, write-set, read-only scope, out-of-scope, acceptance criteria, checks, risks, stop conditions, and next transition.
-- Dependencies and integration points are explicit.
-- Risk tier and required assurance are recorded.
-- No Work Block relies on unapproved upstream decisions.
+- [ ] Work Blocks are bounded, ordered, and traceable to approved artifacts.
+- [ ] Every Work Block has objective, role, expected result, write-set, read-only scope, out-of-scope, acceptance criteria, checks, risks, stop conditions, and next transition.
+- [ ] Dependencies and integration points are explicit.
+- [ ] Risk tier and required assurance are recorded.
+- [ ] No Work Block relies on unapproved upstream decisions.
 
 ## Checks and evidence
 
