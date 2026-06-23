@@ -19,7 +19,7 @@ Reviewer.
 | Artifact | Required status | Why required |
 | --- | --- | --- |
 | Build output or subject artifact | In Review | Provides the frozen candidate for review. |
-| Stage Result | Submitted | Identifies changed files, evidence, checks, deviations, and risks. |
+| Stage Result | Ready | Provides the received build evidence needed for review routing. |
 | Approved governing inputs | Approved | Provide authority for scope and acceptance comparison. |
 
 ## Preconditions
@@ -49,11 +49,11 @@ Reviewer owns the review findings and verdict. The Reviewer does not own or edit
 
 ## Acceptance criteria
 
-- Findings cite inspected artifacts or evidence.
-- Verdict is one of `APPROVE`, `SUPPLEMENT`, or `RECONSIDER`.
-- Blocking and non-blocking findings are separated.
-- Required action and routing are clear for each blocking finding.
-- Reviewer independence is preserved.
+- [ ] Findings cite inspected artifacts or evidence.
+- [ ] Verdict is one of `APPROVE`, `SUPPLEMENT`, or `RECONSIDER`.
+- [ ] Blocking and non-blocking findings are separated.
+- [ ] Required action and routing are clear for each blocking finding.
+- [ ] Reviewer independence is preserved.
 
 ## Checks and evidence
 
