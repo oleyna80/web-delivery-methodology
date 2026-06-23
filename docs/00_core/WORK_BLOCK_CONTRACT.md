@@ -36,7 +36,7 @@ Every non-trivial Work Block records:
 
 ## Write ownership
 
-- One Coder owns all writes during an Implementation step.
+- One Coder owns all writes during a Build step.
 - The Coder does not edit the active Work Block.
 - Reviewers and Verifiers are read-only.
 - A finding that requires changes creates a routed Coder/Fix step.
