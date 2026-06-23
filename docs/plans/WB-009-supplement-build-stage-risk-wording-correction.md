@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -71,12 +71,12 @@ Repository maintenance / core documentation supplement
 
 ## Acceptance criteria
 
-- [ ] `06_BUILD.md` names concrete approval-gated categories or directly references `RISK_TIERING.md` triggers in Risks and Stop conditions.
-- [ ] `06_BUILD.md` no longer relies only on broad phrases like sensitive areas or restricted-scope work.
-- [ ] `07_REVIEW.md` Stage Result wording, if changed, again mentions changed files, evidence, checks, deviations, and risks.
-- [ ] Changed files remain inside the approved write-set.
-- [ ] No core governance file is edited.
-- [ ] No profile-, adapter-, template-, example-, product-, or application-specific behavior is added.
+- [x] `06_BUILD.md` names concrete approval-gated categories or directly references `RISK_TIERING.md` triggers in Risks and Stop conditions.
+- [x] `06_BUILD.md` no longer relies only on broad phrases like sensitive areas or restricted-scope work.
+- [x] `07_REVIEW.md` Stage Result wording, if changed, again mentions changed files, evidence, checks, deviations, and risks.
+- [x] Changed files remain inside the approved write-set.
+- [x] No core governance file is edited.
+- [x] No profile-, adapter-, template-, example-, product-, or application-specific behavior is added.
 
 ## Risks
 
@@ -111,16 +111,27 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-23 | Owner | Review -> Build | Approved WB-009 | Chat request: `WB-009 — Supplement Build Stage Risk Wording Correction` | Execute bounded supplement |
 | 2026-06-23 | Orchestrator | Build | Work Block opened | `docs/plans/WB-009-supplement-build-stage-risk-wording-correction.md` | Correct Build risk wording |
+| 2026-06-23 | Producer / Documentation Maintainer | Build | Corrections applied | `06_BUILD.md`, `07_REVIEW.md` | Run checks and close |
+| 2026-06-23 | Orchestrator | Build | Work Block closed | Changed-file comparison | Route to Review |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: bounded wording correction; WB-009 closeout
 - Files changed:
+  - `docs/00_core/stages/06_BUILD.md`
+  - `docs/00_core/stages/07_REVIEW.md`
+  - `docs/plans/WB-009-supplement-build-stage-risk-wording-correction.md`
 - Checks run:
-- Review verdict:
-- Verification verdict:
-- Deviations:
+  - read `docs/00_core/stages/06_BUILD.md`
+  - read `docs/00_core/stages/07_REVIEW.md`
+  - compared changed files from WB-008 closeout commit to current main
+  - searched for broad unresolved wording from WB-008 F-001
+- Review verdict: pending independent Review
+- Verification verdict: pending
+- Deviations: none
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - correction should receive independent Review before Verification
+  - `06_BUILD.md` now references `RISK_TIERING.md` trigger levels instead of duplicating the full taxonomy inline
+- Required decisions: Owner approval to open Review for WB-009 output
+- Next owner/action: create `WB-010 — Review Build Stage Risk Wording Correction`
