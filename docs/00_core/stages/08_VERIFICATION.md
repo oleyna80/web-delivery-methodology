@@ -45,15 +45,15 @@ Verifier.
 
 ## Output owner
 
-Verifier owns verification evidence and verdict. The Verifier does not fix failures or reinterpret missing acceptance criteria as success.
+Verifier owns verification evidence and verdict. The Verifier does not repair the candidate or reinterpret missing acceptance criteria as success.
 
 ## Acceptance criteria
 
-- Required checks are reproduced or limitations are recorded.
-- Evidence is observable and tied to acceptance criteria.
-- Verdict is `PASS` or `FAIL`.
-- Residual risks and unverified areas are explicit.
-- Independence is preserved.
+- [ ] Required checks are reproduced or limitations are recorded.
+- [ ] Evidence is observable and tied to acceptance criteria.
+- [ ] Verdict is `PASS` or `FAIL`.
+- [ ] Residual risks and unverified areas are explicit.
+- [ ] Independence is preserved.
 
 ## Checks and evidence
 
@@ -70,7 +70,7 @@ Verifier issues the Verification verdict. The Orchestrator records the transitio
 
 | Failure class | Return stage | Required action |
 | --- | --- | --- |
-| Implementation defect only | Build | Create a bounded fix Work Block and repeat Review and Verification. |
+| Implementation defect only | Build | Create a bounded correction Work Block and repeat Review and Verification. |
 | Acceptance criteria or governing input is wrong | Earliest defective specification stage | Reconsider and supersede affected artifacts. |
 | Verification cannot be reproduced | Verification or Implementation Planning | Clarify method, environment, or acceptance criteria. |
 | Higher-tier risk appears | Responsible authority gate | Pause and obtain required controls before continuing. |
@@ -80,7 +80,7 @@ Verifier issues the Verification verdict. The Orchestrator records the transitio
 - Treating review approval as verification pass.
 - Verifying intent instead of observable acceptance criteria.
 - Ignoring limitations or environment drift.
-- Fixing failures during verification.
+- Repairing the candidate during verification.
 
 ## Stop conditions
 
