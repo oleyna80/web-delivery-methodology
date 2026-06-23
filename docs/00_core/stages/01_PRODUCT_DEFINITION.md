@@ -51,11 +51,11 @@ acceptance meaning.
 
 ## Acceptance criteria
 
-- Target users and primary needs are identified.
-- In-scope and out-of-scope work are explicit.
-- Success criteria and acceptance criteria are observable.
-- Constraints, assumptions, risks, and unresolved decisions are recorded.
-- The Project Brief is usable by Architecture, UX, Design, and Planning.
+- [ ] Target users and primary needs are identified.
+- [ ] In-scope and out-of-scope work are explicit.
+- [ ] Success criteria and acceptance criteria are observable.
+- [ ] Constraints, assumptions, risks, and unresolved decisions are recorded.
+- [ ] The Project Brief is usable by Architecture, UX, Design, and Planning.
 
 ## Checks and evidence
 
