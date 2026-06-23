@@ -18,7 +18,7 @@ Product Analyst or feedback owner acting as Producer.
 
 | Artifact | Required status | Why required |
 | --- | --- | --- |
-| Released outcome or validated feedback | Current | Provides the observed result, incident, opportunity, or measurement that may justify new work. |
+| Released outcome or validated feedback | Complete or Verified | Provides the observed result, incident, opportunity, or measurement that may justify new work. |
 
 ## Preconditions
 
@@ -46,11 +46,11 @@ Product Owner owns improvement priority and product meaning. The Orchestrator ow
 
 ## Acceptance criteria
 
-- Feedback source, observation, impact, and affected outcome are recorded.
-- Priority, risk, and recommended action are explicit.
-- Accepted items are routed to Intake or backlog as new governed work.
-- Rejected or deferred items include rationale.
-- Incidents or restricted risks are escalated to required authorities.
+- [ ] Feedback source, observation, impact, and affected outcome are recorded.
+- [ ] Priority, risk, and recommended action are explicit.
+- [ ] Accepted items are routed to Intake or backlog as new governed work.
+- [ ] Rejected or deferred items include rationale.
+- [ ] Incidents or restricted risks are escalated to required authorities.
 
 ## Checks and evidence
 
