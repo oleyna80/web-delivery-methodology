@@ -78,14 +78,14 @@ The Orchestrator accepts the Stage Result for routing only. Independent Review d
 
 - Expanding the write-set without approval.
 - Treating successful build as independent review.
-- Modifying sensitive or approval-gated areas without authority.
+- Modifying areas governed by `RISK_TIERING.md` Tier 2 or Tier 3 triggers without required authority.
 - Failing to report deviations or residual risks.
 
 ## Stop conditions
 
 - Required input is missing, invalid, or contradictory.
 - Work requires paths outside approved write-set.
-- Restricted-scope work appears without the required approval.
+- A `RISK_TIERING.md` Tier 2 or Tier 3 trigger appears without required approval.
 - Required checks cannot be run and no acceptable limitation can be recorded.
 
 ## Next allowed stages
