@@ -43,15 +43,15 @@ Design Producer or Design Analyst acting as Producer.
 
 ## Output owner
 
-Design Owner owns the visual direction and design-system meaning. Owner or delegated Design Authority owns visual approval.
+Design Owner owns the visual direction and design-system meaning. Reviewer and Owner approver own the Design Review decision evidence. Owner or delegated Design Authority owns visual approval.
 
 ## Acceptance criteria
 
-- Visual direction and interface reference are explicit.
-- Design decisions trace to approved UX and product constraints.
-- Responsive behavior and asset requirements are recorded.
-- Accessibility constraints and visual risks are identified.
-- Owner or delegated Design Authority grants visual approval or records required revision.
+- [ ] Visual direction and interface reference are explicit.
+- [ ] Design decisions trace to approved UX and product constraints.
+- [ ] Responsive behavior and asset requirements are recorded.
+- [ ] Accessibility constraints and visual risks are identified.
+- [ ] Owner or delegated Design Authority grants visual approval or records required revision.
 
 ## Checks and evidence
 
