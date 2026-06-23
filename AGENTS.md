@@ -9,7 +9,11 @@ web applications with human and agent participants.
 
 For non-trivial work use:
 
-`Plan -> Spec -> Implementation -> Review -> Verification`
+`Plan -> Spec -> Implementation Planning / Build -> Review -> Verification`
+
+`Implementation Planning / Build` maps to the canonical lifecycle stages that
+turn approved specifications into bounded Work Blocks and implementation
+results. It is not a separate lifecycle stage.
 
 Before editing:
 
@@ -19,8 +23,8 @@ Before editing:
    scope.
 4. Stop when the requested write-set is unclear or must expand.
 
-Only one Coder may write during an Implementation stage. Reviewer and Verifier
-are read-only. The Orchestrator is the only writer of the active Work Block audit
+Only one Coder may write during a Build stage. Reviewer and Verifier are
+read-only. The Orchestrator is the only writer of the active Work Block audit
 trail. Do not commit or push without explicit Owner approval.
 
 ## Methodology boundaries
@@ -46,4 +50,3 @@ Report:
 - actions taken and files changed;
 - checks and verdicts;
 - residual risks and next action.
-
