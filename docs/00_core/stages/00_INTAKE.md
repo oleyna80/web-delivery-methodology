@@ -48,10 +48,10 @@ owns workflow state and routing.
 
 ## Acceptance criteria
 
-- The problem or opportunity is stated in business terms.
-- The Owner or accountable decision source is identified.
-- Initial scope, exclusions, assumptions, and known risks are explicit.
-- The request is either accepted for Product Definition, deferred, or declined
+- [ ] The problem or opportunity is stated in business terms.
+- [ ] The Owner or accountable decision source is identified.
+- [ ] Initial scope, exclusions, assumptions, and known risks are explicit.
+- [ ] The request is either accepted for Product Definition, deferred, or declined
   with rationale.
 
 ## Checks and evidence
@@ -90,6 +90,6 @@ that the next Product Definition Work Block has enough authority to start.
 ## Next allowed stages
 
 - Product Definition when the intake is accepted.
-- Improvement when the item is a production feedback candidate already tied to a
-  released outcome.
+- Improvement when the item is misrouted production feedback already tied to a
+  released outcome; redirect it to Improvement rather than continuing Intake.
 - Cancelled or deferred state when the Owner declines or postpones the request.
