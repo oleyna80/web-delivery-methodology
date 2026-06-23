@@ -93,6 +93,5 @@ When an approved upstream artifact changes:
 - `In Progress -> Complete` without required Review and Verification.
 - `In Review -> In Progress` without a recorded verdict and routed fix scope.
 - `In Verification -> Complete` without `PASS`.
-- `Verified -> released` without the required Owner decision.
+- `Verified -> Complete` for a release-governed stage without the required Owner decision.
 - Any transition based only on chat history or an unrecorded verbal assumption.
-
