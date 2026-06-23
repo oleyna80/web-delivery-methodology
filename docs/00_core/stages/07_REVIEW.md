@@ -19,7 +19,7 @@ Reviewer.
 | Artifact | Required status | Why required |
 | --- | --- | --- |
 | Build output or subject artifact | In Review | Provides the frozen candidate for review. |
-| Stage Result | Ready | Provides the received build evidence needed for review routing. |
+| Stage Result | Ready | Identifies changed files, evidence, checks, deviations, risks, and review-routing context. |
 | Approved governing inputs | Approved | Provide authority for scope and acceptance comparison. |
 
 ## Preconditions
