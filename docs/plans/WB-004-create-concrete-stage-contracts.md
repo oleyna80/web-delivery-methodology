@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -88,14 +88,14 @@ Repository maintenance / core documentation build
 
 ## Acceptance criteria
 
-- [ ] `STAGE_INDEX.md` lists stages 0–10 with exact names from `LIFECYCLE.md`.
-- [ ] Every stage has one corresponding file under `docs/00_core/stages/`.
-- [ ] Every stage file includes all required fields from `STAGE_CONTRACT.md`.
-- [ ] Required inputs and outputs align with `LIFECYCLE.md` and `ARTIFACT_REGISTRY.md`.
-- [ ] Approvers and assurance roles align with `APPROVAL_MATRIX.md` and `ROLE_CONTRACTS.md`.
-- [ ] Failure routes align with `LIFECYCLE.md` and `STATE_MACHINE.md`.
-- [ ] No profile-, adapter-, template-, tool-, vendor-, or implementation-specific behavior is added.
-- [ ] No existing core files are modified.
+- [x] `STAGE_INDEX.md` lists stages 0–10 with exact names from `LIFECYCLE.md`.
+- [x] Every stage has one corresponding file under `docs/00_core/stages/`.
+- [x] Every stage file includes all required fields from `STAGE_CONTRACT.md`.
+- [x] Required inputs and outputs align with `LIFECYCLE.md` and `ARTIFACT_REGISTRY.md`.
+- [x] Approvers and assurance roles align with `APPROVAL_MATRIX.md` and `ROLE_CONTRACTS.md`.
+- [x] Failure routes align with `LIFECYCLE.md` and `STATE_MACHINE.md`.
+- [x] No profile-, adapter-, template-, tool-, vendor-, or implementation-specific behavior is added.
+- [x] No existing core files are modified.
 
 ## Risks
 
@@ -131,16 +131,36 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-23 | Owner | Planning -> Build | Approved WB-004 | Chat approval for `WB-004` | Create concrete Stage Contracts |
 | 2026-06-23 | Orchestrator | Build | Work Block opened | `docs/plans/WB-004-create-concrete-stage-contracts.md` | Create index and stage files |
+| 2026-06-23 | Producer / Documentation Maintainer | Build | Concrete Stage Contracts created | `docs/00_core/STAGE_INDEX.md`, `docs/00_core/stages/*.md` | Route to Review |
+| 2026-06-23 | Orchestrator | Build | Work Block closed | Changed-file comparison and vendor/tool leakage search | Await Owner approval for Review |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: Concrete Stage Contract index; concrete Stage Contract files for lifecycle stages 0–10; WB-004 closeout
 - Files changed:
+  - `docs/00_core/STAGE_INDEX.md`
+  - `docs/00_core/stages/00_INTAKE.md`
+  - `docs/00_core/stages/01_PRODUCT_DEFINITION.md`
+  - `docs/00_core/stages/02_SOLUTION_ARCHITECTURE.md`
+  - `docs/00_core/stages/03_UX.md`
+  - `docs/00_core/stages/04_UI_DESIGN.md`
+  - `docs/00_core/stages/05_IMPLEMENTATION_PLANNING.md`
+  - `docs/00_core/stages/06_BUILD.md`
+  - `docs/00_core/stages/07_REVIEW.md`
+  - `docs/00_core/stages/08_VERIFICATION.md`
+  - `docs/00_core/stages/09_RELEASE_HANDOFF.md`
+  - `docs/00_core/stages/10_IMPROVEMENT.md`
+  - `docs/plans/WB-004-create-concrete-stage-contracts.md`
 - Checks run:
-- Review verdict:
-- Verification verdict:
-- Deviations:
+  - compared changed files from `WB-003` closeout commit to current main
+  - confirmed only the approved index, 11 stage files, and WB-004 file were added
+  - searched for vendor/tool leakage terms: Codex, Claude, Antigravity, OpenAI, Next.js, n8n, Vercel, Docker, provider credentials, secrets
+- Review verdict: pending independent Review
+- Verification verdict: pending
+- Deviations: none
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - stage contracts have not yet received independent Review or Verification
+  - some stage contracts may need tightening after reviewer checks against `LIFECYCLE.md`, `STAGE_CONTRACT.md`, `ARTIFACT_REGISTRY.md`, `ROLE_CONTRACTS.md`, and `APPROVAL_MATRIX.md`
+- Required decisions: Owner approval to start Review Work Block for WB-004 output
+- Next owner/action: create `WB-005 — Review Concrete Stage Contracts`
