@@ -51,12 +51,12 @@ risk acceptance for material or high-risk decisions.
 
 ## Acceptance criteria
 
-- The technical approach is explicit and traceable to the approved Project Brief.
-- Affected data, API, auth, security, integration, operational, and compliance
+- [ ] The technical approach is explicit and traceable to the approved Project Brief.
+- [ ] Affected data, API, auth, security, integration, operational, and compliance
   constraints are recorded.
-- Alternatives and trade-offs are documented when material.
-- Risk tier and required controls are identified.
-- Downstream UX, design, planning, and build constraints are clear.
+- [ ] Alternatives and trade-offs are documented when material.
+- [ ] Risk tier and required controls are identified.
+- [ ] Downstream UX, design, planning, and build constraints are clear.
 
 ## Checks and evidence
 
