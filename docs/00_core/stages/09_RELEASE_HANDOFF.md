@@ -18,9 +18,9 @@ Release Producer or Orchestrator.
 
 | Artifact | Required status | Why required |
 | --- | --- | --- |
-| Verification Report | Passed | Confirms the candidate passed required checks. |
+| Verification Report | `PASS` verdict recorded | Confirms the candidate passed required checks. |
 | Candidate result | Verified | Identifies the exact artifact, build, package, documentation, or deliverable eligible for handoff. |
-| Residual risk record | Current | Identifies known unresolved conditions and decision needs. |
+| Residual risk record | Approved or explicitly recorded | Identifies known unresolved conditions and decision needs. |
 
 ## Preconditions
 
@@ -49,11 +49,11 @@ Release Owner owns release-readiness presentation. Owner or delegated human Rele
 
 ## Acceptance criteria
 
-- Exact candidate is identified.
-- Verification evidence is referenced.
-- Prerequisites, rollback or recovery, monitoring, and support path are explicit.
-- Residual risks and unresolved decisions are recorded.
-- Owner or delegated human Release Authority authorizes release, accepts handoff, holds, or routes required changes.
+- [ ] Exact candidate is identified.
+- [ ] Verification evidence is referenced.
+- [ ] Prerequisites, rollback or recovery, monitoring, and support path are explicit.
+- [ ] Residual risks and unresolved decisions are recorded.
+- [ ] Owner or delegated human Release Authority authorizes release, accepts handoff, holds, or routes required changes.
 
 ## Checks and evidence
 
