@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -85,12 +85,12 @@ Core documents are internally consistent and ready for a separate read-only Veri
 
 ## Acceptance criteria
 
-- [ ] `AGENTS.md` no longer implies `Implementation` is a canonical lifecycle stage separate from `Implementation Planning` and `Build`.
-- [ ] `STATE_MACHINE.md` forbidden transitions use only canonical states or clearly named non-state actions.
-- [ ] `WORK_BLOCK_CONTRACT.md` explains how repository-maintenance Work Blocks may be created before the canonical template file exists.
-- [ ] `README.md` has no duplicate trailing title.
-- [ ] No profiles, adapters, examples, application code, secrets, dependencies, or deployment configuration are added.
-- [ ] Files changed remain within the approved write-set.
+- [x] `AGENTS.md` no longer implies `Implementation` is a canonical lifecycle stage separate from `Implementation Planning` and `Build`.
+- [x] `STATE_MACHINE.md` forbidden transitions use only canonical states or clearly named non-state actions.
+- [x] `WORK_BLOCK_CONTRACT.md` explains how repository-maintenance Work Blocks may be created before the canonical template file exists.
+- [x] `README.md` has no duplicate trailing title.
+- [x] No profiles, adapters, examples, application code, secrets, dependencies, or deployment configuration are added.
+- [x] Files changed remain within the approved write-set.
 
 ## Risks
 
@@ -124,16 +124,26 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-23 | Owner | Review -> Build | Approved supplement execution | Chat approval for `WB-001` | Proceed within approved write-set |
 | 2026-06-23 | Orchestrator | Build | Work Block opened | `docs/plans/WB-001-core-consistency-supplement.md` | Apply bounded supplement |
+| 2026-06-23 | Producer / Documentation Maintainer | Build | Supplement applied | `README.md`, `AGENTS.md`, `docs/00_core/STATE_MACHINE.md`, `docs/00_core/WORK_BLOCK_CONTRACT.md` | Route to Verification |
+| 2026-06-23 | Orchestrator | Build | Work Block closed | Acceptance criteria checked | Start read-only Verification Work Block |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: repository-maintenance Work Block; repository instructions; state machine; Work Block contract; README cleanup
 - Files changed:
+  - `docs/plans/WB-001-core-consistency-supplement.md`
+  - `README.md`
+  - `AGENTS.md`
+  - `docs/00_core/STATE_MACHINE.md`
+  - `docs/00_core/WORK_BLOCK_CONTRACT.md`
 - Checks run:
+  - re-read changed files
+  - searched for unresolved `Implementation step`, `during an Implementation`, lowercase `released`, and duplicate `# web-delivery-methodology`
+  - searched for vendor/tool leakage terms: Codex, Claude, Antigravity, OpenAI, Next.js, n8n, Vercel, Docker, provider credentials, secrets
 - Review verdict: `SUPPLEMENT`
-- Verification verdict:
-- Deviations:
-- Residual risks:
-- Required decisions:
-- Next owner/action:
+- Verification verdict: pending separate read-only Verification
+- Deviations: none
+- Residual risks: concrete Stage Contracts are still not created; profiles/adapters should remain deferred until Verification passes and the next Work Block is approved
+- Required decisions: Owner approval to start a separate read-only Verification Work Block
+- Next owner/action: Orchestrator should open Verification for WB-001 results
