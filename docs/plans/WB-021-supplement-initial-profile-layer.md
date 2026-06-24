@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -64,11 +64,11 @@ Repository maintenance / profile layer supplement
 
 ## Acceptance criteria
 
-- [ ] `LOW_RISK_LANDING_PAGE.md` Approval gates section includes explicit Architecture approval for conditional Solution Architecture.
-- [ ] No other profile contract content is changed.
-- [ ] No core governance or template files are edited.
-- [ ] No adapters or examples are created.
-- [ ] Changed files remain inside the approved write-set.
+- [x] `LOW_RISK_LANDING_PAGE.md` Approval gates section includes explicit Architecture approval for conditional Solution Architecture.
+- [x] No other profile contract content is changed.
+- [x] No core governance or template files are edited.
+- [x] No adapters or examples are created.
+- [x] Changed files remain inside the approved write-set.
 
 ## Risks
 
@@ -100,16 +100,25 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-24 | Owner | Review -> Build | Approved WB-021 | Chat request: `подтверждаю WB-021 — Supplement Initial Profile Layer` | Correct F-001 |
 | 2026-06-24 | Orchestrator | Build | Work Block opened | `docs/plans/WB-021-supplement-initial-profile-layer.md` | Update one profile line |
+| 2026-06-24 | Producer / Documentation Maintainer | Build | Correction applied | `docs/01_profiles/LOW_RISK_LANDING_PAGE.md` | Run scope check |
+| 2026-06-24 | Orchestrator | Build | Work Block closed | Changed-file comparison | Route back to Review |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: profile supplement correction and WB-021 closeout
 - Files changed:
+  - `docs/01_profiles/LOW_RISK_LANDING_PAGE.md`
+  - `docs/plans/WB-021-supplement-initial-profile-layer.md`
 - Checks run:
-- Review verdict:
-- Verification verdict:
-- Deviations:
+  - read `LOW_RISK_LANDING_PAGE.md` before correction
+  - added explicit conditional Architecture approval line
+  - compared changed files from WB-020 closeout commit to current main
+- Review verdict: pending follow-up Review
+- Verification verdict: pending
+- Deviations: none
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - correction requires follow-up Review before profile-layer Verification
+  - adapters and examples remain deferred
+- Required decisions: Owner approval to open follow-up Review
+- Next owner/action: create `WB-022 — Review Initial Profile Layer Supplement`
