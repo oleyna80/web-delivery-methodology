@@ -20,6 +20,14 @@ No concrete adapter is authoritative yet.
 
 Concrete adapters must be created, reviewed, verified, and explicitly listed here before use as methodology authority.
 
+## Draft concrete adapters
+
+Draft adapters are not authoritative.
+
+| Adapter ID | File | Status | Supported profiles | Supported stages | Supported roles | Max risk tier without extra controls | Required Owner approvals | Review WB | Verification WB | Limitations |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `REPOSITORY_CODING_AGENT` | `docs/02_adapters/REPOSITORY_CODING_AGENT.md` | Draft | `LOW_RISK_LANDING_PAGE`, `STANDARD_BUSINESS_WEBSITE`, `WEB_APPLICATION` | Implementation Planning, Build, Review, Verification, Release Handoff support, plus bounded documentation support for other stages | Producer, Builder, Specialist, Reviewer, Verifier, Orchestrator-support | Tier 1 | Required for release/deployment decisions, destructive actions, restricted actions, material residual risk, business-scope changes, sensitive or regulated work | Pending | Pending | Generic repository-aware coding environment only; not authoritative until Review and Verification pass; no vendor/product/model/provider assumptions |
+
 ## Candidate adapter categories
 
 These categories are planning candidates only. They are not concrete adapters.
@@ -78,4 +86,4 @@ Use these adapter status values:
 
 ## Current next action
 
-Review and verify the adapter governance foundation created by WB-025 before creating concrete adapter files.
+Review the `REPOSITORY_CODING_AGENT` draft adapter before Verification or authoritative use.
