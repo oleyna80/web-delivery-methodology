@@ -28,6 +28,12 @@ Record the final handoff decision for an approved and verified outcome.
 - Excluded scope:
 - Evidence location:
 
+## Prerequisites
+
+- Required approvals:
+- Required evidence:
+- Required readiness conditions:
+
 ## Handoff checklist
 
 - Owner approval:
@@ -35,6 +41,13 @@ Record the final handoff decision for an approved and verified outcome.
 - Residual risks recorded:
 - Handoff notes:
 - Follow-up notes:
+
+## Recovery and support paths
+
+- Rollback or recovery path:
+- Monitoring path:
+- Support path:
+- Responsible owner or role:
 
 ## Decision
 
@@ -54,6 +67,10 @@ Use one:
 
 - [ ] Verification Report is available and records `PASS`.
 - [ ] Handoff scope is clear.
+- [ ] Prerequisites are explicit.
+- [ ] Rollback or recovery path is explicit.
+- [ ] Monitoring path is explicit.
+- [ ] Support path is explicit.
 - [ ] Residual risks are recorded.
 - [ ] Owner or delegated authority decision is recorded.
 - [ ] Next owner/action is clear.
