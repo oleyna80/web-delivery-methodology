@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -73,14 +73,14 @@ Adapter layer foundation exists with README, adapter contract, and adapter index
 
 ## Acceptance criteria
 
-- [ ] `docs/02_adapters/README.md` exists and explains Adapter layer purpose, authority, boundaries, and status.
-- [ ] `docs/02_adapters/ADAPTER_CONTRACT.md` exists and defines the required structure and constraints for future concrete adapters.
-- [ ] `docs/02_adapters/ADAPTER_INDEX.md` exists and records that no concrete adapters are authoritative yet.
-- [ ] Concrete adapters remain deferred.
-- [ ] Examples remain deferred.
-- [ ] No core governance, profile, or template file is edited.
-- [ ] No secrets, credentials, model-routing policy, deployment credentials, installation commands, or runtime setup steps are added.
-- [ ] Changed files remain inside the approved write-set.
+- [x] `docs/02_adapters/README.md` exists and explains Adapter layer purpose, authority, boundaries, and status.
+- [x] `docs/02_adapters/ADAPTER_CONTRACT.md` exists and defines the required structure and constraints for future concrete adapters.
+- [x] `docs/02_adapters/ADAPTER_INDEX.md` exists and records that no concrete adapters are authoritative yet.
+- [x] Concrete adapters remain deferred.
+- [x] Examples remain deferred.
+- [x] No core governance, profile, or template file is edited.
+- [x] No secrets, credentials, model-routing policy, deployment credentials, installation commands, or runtime setup steps are added.
+- [x] Changed files remain inside the approved write-set.
 
 ## Risks
 
@@ -91,10 +91,10 @@ Adapter layer foundation exists with README, adapter contract, and adapter index
 
 ## Checks and evidence
 
-- Create exactly three adapter governance files.
-- Compare changed files against approved write-set.
-- Confirm concrete adapters and examples are not created.
-- Confirm core/profile/template files remain unchanged.
+- Created exactly three adapter governance files.
+- Compared changed files against approved write-set.
+- Confirmed concrete adapters and examples were not created.
+- Confirmed core/profile/template files remain unchanged by approved write-set scope.
 
 ## Stop conditions
 
@@ -118,16 +118,33 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-24 | Owner | Planning -> Build | Approved WB-025 | Chat request: `переходим к WB-025 — Create Adapter Layer Contract and Index` | Create adapter governance foundation |
 | 2026-06-24 | Orchestrator | Build | Work Block opened | `docs/plans/WB-025-create-adapter-layer-contract-and-index.md` | Create governance files |
+| 2026-06-24 | Producer / Documentation Maintainer | Build | Adapter README created | `docs/02_adapters/README.md` | Continue contract/index |
+| 2026-06-24 | Producer / Documentation Maintainer | Build | Adapter contract created | `docs/02_adapters/ADAPTER_CONTRACT.md` | Continue index |
+| 2026-06-24 | Producer / Documentation Maintainer | Build | Adapter index created | `docs/02_adapters/ADAPTER_INDEX.md` | Check scope |
+| 2026-06-24 | Orchestrator | Build | Scope check passed | changed-file comparison from WB-024 closeout to current main | Route to Review |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: adapter governance foundation and WB-025 closeout
 - Files changed:
+  - `docs/02_adapters/README.md`
+  - `docs/02_adapters/ADAPTER_CONTRACT.md`
+  - `docs/02_adapters/ADAPTER_INDEX.md`
+  - `docs/plans/WB-025-create-adapter-layer-contract-and-index.md`
 - Checks run:
-- Review verdict:
-- Verification verdict:
-- Deviations:
+  - created exactly three adapter governance files
+  - compared changed files from WB-024 closeout commit to current main
+  - confirmed changed files remain inside approved write-set
+  - confirmed no concrete adapter files were created
+  - confirmed no examples were created
+- Review verdict: pending
+- Verification verdict: pending
+- Deviations: none
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - adapter governance foundation requires independent Review
+  - adapter governance foundation requires Verification before concrete adapters are created
+  - concrete adapters remain deferred
+  - examples remain deferred
+- Required decisions: Owner approval to open follow-up Review
+- Next owner/action: create `WB-026 — Review Adapter Layer Contract and Index`
