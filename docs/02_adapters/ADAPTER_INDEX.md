@@ -16,17 +16,17 @@ A file is not an authoritative adapter unless this index marks it as authoritati
 
 ## Authoritative concrete adapters
 
-No concrete adapter is authoritative yet.
-
-Concrete adapters must be created, reviewed, verified, and explicitly listed here before use as methodology authority.
-
-## Draft concrete adapters
-
-Draft adapters are not authoritative.
+Concrete adapters listed here are authoritative only within their stated limitations and only after Build, Review, and Verification evidence is recorded.
 
 | Adapter ID | File | Status | Supported profiles | Supported stages | Supported roles | Max risk tier without extra controls | Required Owner approvals | Review WB | Verification WB | Limitations |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `REPOSITORY_CODING_AGENT` | `docs/02_adapters/REPOSITORY_CODING_AGENT.md` | Draft | `LOW_RISK_LANDING_PAGE`, `STANDARD_BUSINESS_WEBSITE`, `WEB_APPLICATION` | Implementation Planning, Build, Review, Verification, Release Handoff support, plus bounded documentation support for other stages | Producer, Builder, Specialist, Reviewer, Verifier, Orchestrator-support | Tier 1 | Required for release/deployment decisions, destructive actions, restricted actions, material residual risk, business-scope changes, sensitive or regulated work | Pending | Pending | Generic repository-aware coding environment only; not authoritative until Review and Verification pass; no vendor/product/model/provider assumptions |
+| `REPOSITORY_CODING_AGENT` | `docs/02_adapters/REPOSITORY_CODING_AGENT.md` | Verified | `LOW_RISK_LANDING_PAGE`, `STANDARD_BUSINESS_WEBSITE`, `WEB_APPLICATION` | Implementation Planning, Build, Review, Verification, Release Handoff support, plus bounded documentation support for other stages | Producer, Builder, Specialist, Reviewer, Verifier, Orchestrator-support | Tier 1 | Required for release/deployment decisions, destructive actions, restricted actions, material residual risk, business-scope changes, sensitive or regulated work | `WB-030` | `WB-031` | Generic repository-aware coding environment only; no vendor/product/model/provider assumptions; subordinate to core governance, profiles, templates, and active Work Block |
+
+## Draft concrete adapters
+
+No draft concrete adapter is currently listed.
+
+Draft adapters are not authoritative.
 
 ## Candidate adapter categories
 
@@ -34,7 +34,6 @@ These categories are planning candidates only. They are not concrete adapters.
 
 | Candidate category | Purpose | Status | Notes |
 | --- | --- | --- | --- |
-| Repository Coding Agent adapter | Map repository-aware coding environments to bounded Build, Producer, Review, or Verification assignments | Candidate | Must preserve separation of duties and exact write-set boundaries |
 | Conversation Orchestrator adapter | Map conversational assistant environments to Orchestrator, Producer, Documentation Analyst, or planning-support roles | Candidate | Must not treat chat history as approval evidence |
 | Design/Frontend Agent adapter | Map design-generation or frontend-focused environments to UI Design, Visual Review, and frontend Build support | Candidate | Must distinguish Design Authority, Visual Review, and Build roles |
 | Connector/Repository API adapter | Map repository connector actions to read/write constraints, audit evidence, and Work Block file maintenance | Candidate | Must prevent unauthorized audit-trail mutation and uncontrolled writes |
@@ -86,4 +85,4 @@ Use these adapter status values:
 
 ## Current next action
 
-Review the `REPOSITORY_CODING_AGENT` draft adapter before Verification or authoritative use.
+Use the verified `REPOSITORY_CODING_AGENT` adapter for repository-aware coding assignments where it fits the active Work Block, profile, risk tier, and role constraints. Plan the next concrete adapter only through a new Work Block.
