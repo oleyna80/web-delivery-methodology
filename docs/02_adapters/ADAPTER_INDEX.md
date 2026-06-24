@@ -21,14 +21,13 @@ Concrete adapters listed here are authoritative only within their stated limitat
 | Adapter ID | File | Status | Supported profiles | Supported stages | Supported roles | Max risk tier without extra controls | Required Owner approvals | Review WB | Verification WB | Limitations |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `REPOSITORY_CODING_AGENT` | `docs/02_adapters/REPOSITORY_CODING_AGENT.md` | Verified | `LOW_RISK_LANDING_PAGE`, `STANDARD_BUSINESS_WEBSITE`, `WEB_APPLICATION` | Implementation Planning, Build, Review, Verification, Release Handoff support, plus bounded documentation support for other stages | Producer, Builder, Specialist, Reviewer, Verifier, Orchestrator-support | Tier 1 | Required for release/deployment decisions, destructive actions, restricted actions, material residual risk, business-scope changes, sensitive or regulated work | `WB-030` | `WB-031` | Generic repository-aware coding environment only; no vendor/product/model/provider assumptions; subordinate to core governance, profiles, templates, and active Work Block |
+| `CONVERSATION_ORCHESTRATOR` | `docs/02_adapters/CONVERSATION_ORCHESTRATOR.md` | Verified | `LOW_RISK_LANDING_PAGE`, `STANDARD_BUSINESS_WEBSITE`, `WEB_APPLICATION` | Intake, Product Definition support, Architecture/UX/UI routing, Implementation Planning, Build coordination, Review evidence intake, Verification evidence intake, Release Handoff support, Improvement | Orchestrator-support, Producer, Specialist, conditional read-only Reviewer, conditional read-only Verifier | Tier 1 | Required for release/deployment decisions, destructive actions, restricted actions, material residual risk, business-scope changes, sensitive or regulated work, and role reassignment that could compromise independence | `WB-035` | `WB-036` | Generic conversational coordination environment only; no repository write authority by default; no vendor/product/model/provider assumptions; subordinate to core governance, profiles, templates, verified adapters, and active Work Block |
 
 ## Draft concrete adapters
 
-Draft adapters are not authoritative.
+No draft concrete adapter is currently listed.
 
-| Adapter ID | File | Status | Supported profiles | Supported stages | Supported roles | Max risk tier without extra controls | Required Owner approvals | Review WB | Verification WB | Limitations |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `CONVERSATION_ORCHESTRATOR` | `docs/02_adapters/CONVERSATION_ORCHESTRATOR.md` | Draft | `LOW_RISK_LANDING_PAGE`, `STANDARD_BUSINESS_WEBSITE`, `WEB_APPLICATION` | Intake, Product Definition support, Architecture/UX/UI routing, Implementation Planning, Build coordination, Review evidence intake, Verification evidence intake, Release Handoff support, Improvement | Orchestrator-support, Producer, Specialist, conditional read-only Reviewer, conditional read-only Verifier | Tier 1 | Required for release/deployment decisions, destructive actions, restricted actions, material residual risk, business-scope changes, sensitive or regulated work, and role reassignment that could compromise independence | Pending | Pending | Generic conversational coordination environment only; not authoritative until Review and Verification pass; no repository write authority by default; no vendor/product/model/provider assumptions |
+Draft adapters are not authoritative.
 
 ## Candidate adapter categories
 
@@ -86,4 +85,4 @@ Use these adapter status values:
 
 ## Current next action
 
-Review the `CONVERSATION_ORCHESTRATOR` draft adapter before Verification or authoritative use.
+Use the verified adapters according to their stated limitations and the active Work Block. Plan the next concrete adapter or the first methodology example only through a new Work Block.
