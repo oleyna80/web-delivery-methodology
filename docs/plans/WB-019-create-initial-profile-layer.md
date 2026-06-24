@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -83,15 +83,15 @@ Profile layer with simplified, standard, and extended lifecycle-depth profiles.
 
 ## Acceptance criteria
 
-- [ ] `README.md` defines profile purpose, authority boundaries, profile list, and selection guidance.
-- [ ] `LOW_RISK_LANDING_PAGE.md` defines simplified lifecycle depth without removing required decisions or approvals.
-- [ ] `STANDARD_BUSINESS_WEBSITE.md` defines standard lifecycle depth and escalation behavior.
-- [ ] `WEB_APPLICATION.md` defines extended lifecycle depth and specialist-trigger behavior.
-- [ ] Each profile defines profile ID, purpose, intended use, default risk tier, lifecycle depth, artifact rules, review/verification requirements, approval gates, evidence requirements, stop conditions, and prohibited omissions.
-- [ ] Profiles preserve lifecycle stage intent, approval gates, failure routes, ownership, and risk baselines.
-- [ ] Profiles do not create adapters, examples, or product-specific filled content.
-- [ ] Changed files remain inside the approved write-set.
-- [ ] No core governance or template files are edited.
+- [x] `README.md` defines profile purpose, authority boundaries, profile list, and selection guidance.
+- [x] `LOW_RISK_LANDING_PAGE.md` defines simplified lifecycle depth without removing required decisions or approvals.
+- [x] `STANDARD_BUSINESS_WEBSITE.md` defines standard lifecycle depth and escalation behavior.
+- [x] `WEB_APPLICATION.md` defines extended lifecycle depth and specialist-trigger behavior.
+- [x] Each profile defines profile ID, purpose, intended use, default risk tier, lifecycle depth, artifact rules, review/verification requirements, approval gates, evidence requirements, stop conditions, and prohibited omissions.
+- [x] Profiles preserve lifecycle stage intent, approval gates, failure routes, ownership, and risk baselines.
+- [x] Profiles do not create adapters, examples, or product-specific filled content.
+- [x] Changed files remain inside the approved write-set.
+- [x] No core governance or template files are edited.
 
 ## Risks
 
@@ -127,16 +127,28 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-24 | Owner | Planning -> Build | Approved WB-019 | Chat request: `подтверждаю выполнение WB-019 — Create Initial Profile Layer` | Create initial profile layer |
 | 2026-06-24 | Orchestrator | Build | Work Block opened | `docs/plans/WB-019-create-initial-profile-layer.md` | Create profile files |
+| 2026-06-24 | Producer / Documentation Maintainer | Build | Profile layer created | `docs/01_profiles/` | Run scope and leakage checks |
+| 2026-06-24 | Orchestrator | Build | Work Block closed | Changed-file comparison and leakage search | Route to Review |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: initial profile layer and WB-019 closeout
 - Files changed:
+  - `docs/01_profiles/README.md`
+  - `docs/01_profiles/LOW_RISK_LANDING_PAGE.md`
+  - `docs/01_profiles/STANDARD_BUSINESS_WEBSITE.md`
+  - `docs/01_profiles/WEB_APPLICATION.md`
+  - `docs/plans/WB-019-create-initial-profile-layer.md`
 - Checks run:
-- Review verdict:
-- Verification verdict:
-- Deviations:
+  - compared changed files from WB-018 closeout commit to current main
+  - searched for explicit tool, vendor, framework, hosting, and product-specific leakage terms
+- Review verdict: pending independent Review
+- Verification verdict: pending
+- Deviations: none
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - profiles require independent Review and Verification before they become authoritative
+  - adapters and examples remain deferred
+  - Review should check that combined-artifact rules do not weaken lifecycle intent, ownership, approval, or failure routes
+- Required decisions: Owner approval to open Review for WB-019 output
+- Next owner/action: create `WB-020 — Review Initial Profile Layer`
