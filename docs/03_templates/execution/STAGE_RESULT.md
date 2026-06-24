@@ -16,17 +16,29 @@ Record the completed stage output, supporting evidence, deviations, residual ris
 ## Source Work Block
 
 - Work Block ID:
-- Stage:
-- Producing role:
+- Actor and role:
+- Lifecycle stage:
+- Execution state:
 - Date:
 
-## Output summary
+## Outcome
 
-| Output | Summary | Evidence |
-| --- | --- | --- |
-|  |  |  |
+- Outcome or verdict:
+- Summary:
 
-## Checks and evidence
+## Artifacts created, changed, or reviewed
+
+| Artifact | Action | Summary | Evidence |
+| --- | --- | --- | --- |
+|  |  |  |  |
+
+## Files changed
+
+| Path | Change summary | Inside approved write-set? | Evidence |
+| --- | --- | --- | --- |
+|  |  |  |  |
+
+## Evidence and checks
 
 | Check | Result | Evidence or note |
 | --- | --- | --- |
@@ -38,11 +50,21 @@ Record the completed stage output, supporting evidence, deviations, residual ris
 | --- | --- | --- |
 |  |  |  |
 
-## Deviations and residual risks
+## Deviations from the approved contract
 
 - Deviations:
-- Residual risks:
 - Limitations:
+
+## Findings and residual risks
+
+- Findings:
+- Residual risks:
+
+## Required decisions
+
+- Decision needed:
+- Decision owner:
+- Timing or dependency:
 
 ## Recommended next action
 
@@ -54,8 +76,10 @@ Use the next route defined by the active Work Block and State Machine.
 
 ## Completion criteria
 
-- [ ] Outputs are listed.
-- [ ] Checks and limitations are recorded.
+- [ ] Work Block ID, actor and role, lifecycle stage, execution state, and outcome or verdict are recorded.
+- [ ] Artifacts created, changed, or reviewed are listed.
+- [ ] Files changed are listed or explicitly marked none.
+- [ ] Evidence and checks are recorded.
 - [ ] Acceptance criteria status is clear.
-- [ ] Deviations and residual risks are explicit.
-- [ ] Recommended next action is recorded.
+- [ ] Deviations, findings, and residual risks are explicit.
+- [ ] Required decisions and recommended next action are recorded.
