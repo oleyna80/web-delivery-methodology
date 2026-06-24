@@ -7,11 +7,12 @@
 | Adapter ID | `REPOSITORY_CODING_AGENT` |
 | Adapter name | Repository Coding Agent Adapter |
 | Adapter type or category | Repository-aware coding environment |
-| Status | Draft |
+| Status | Verified |
 | Supported tool or execution-environment category | Repository-aware coding environment with file inspection and bounded file-editing capability |
 | Producing Work Block | `WB-029 — Create Repository Coding Agent Adapter` |
-| Review Work Block | Pending |
-| Verification Work Block | Pending |
+| Review Work Block | `WB-030 — Review Repository Coding Agent Adapter` |
+| Verification Work Block | `WB-031 — Verify Repository Coding Agent Adapter` |
+| Promotion Work Block | `WB-032 — Promote Repository Coding Agent Adapter` |
 
 ## Purpose
 
@@ -239,6 +240,6 @@ For Verification, use verdicts: `PASS` or `FAIL`.
 
 ## Current status
 
-Draft.
+Verified.
 
-This adapter is not authoritative until it passes independent Review and Verification and `ADAPTER_INDEX.md` records it as verified or authoritative according to index rules.
+This adapter is authoritative only as listed in `ADAPTER_INDEX.md` and remains subordinate to core governance, profiles, templates, and the active Work Block.
