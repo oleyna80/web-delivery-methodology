@@ -2,7 +2,7 @@
 
 ## Status
 
-In Verification
+Complete
 
 ## Lifecycle stage
 
@@ -70,13 +70,13 @@ Verification Report with `PASS` or `FAIL`, evidence, limitations, residual risks
 
 ## Acceptance criteria
 
-- [ ] `WB-010` Review Report exists and verdict is `APPROVE`.
-- [ ] `WB-009` exists and status is `Complete`.
-- [ ] `06_BUILD.md` references `RISK_TIERING.md` Tier 2 or Tier 3 triggers in Risks and Stop conditions.
-- [ ] `06_BUILD.md` no longer uses the broad wording flagged by WB-008 F-001.
-- [ ] `07_REVIEW.md` Stage Result description includes changed files, evidence, checks, deviations, and risks.
-- [ ] Changed files since WB-010 are limited to this WB-011 file.
-- [ ] No profile-, adapter-, template-, example-, product-, or application-specific behavior was added by this Verification Work Block.
+- [x] `WB-010` Review Report exists and verdict is `APPROVE`.
+- [x] `WB-009` exists and status is `Complete`.
+- [x] `06_BUILD.md` references `RISK_TIERING.md` Tier 2 or Tier 3 triggers in Risks and Stop conditions.
+- [x] `06_BUILD.md` no longer uses the broad wording flagged by WB-008 F-001.
+- [x] `07_REVIEW.md` Stage Result description includes changed files, evidence, checks, deviations, and risks.
+- [x] Changed files since WB-010 are limited to this WB-011 file.
+- [x] No profile-, adapter-, template-, example-, product-, or application-specific behavior was added by this Verification Work Block.
 
 ## Risks
 
@@ -114,23 +114,39 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-24 | Owner | Review -> Verification | Approved WB-011 | Chat request: `Продолжай` after WB-011 was identified as next step | Execute Verification |
 | 2026-06-24 | Orchestrator | Verification | Work Block opened | `docs/plans/WB-011-verify-build-stage-risk-wording-correction.md` | Verify WB-009 correction |
+| 2026-06-24 | Verifier / Documentation Analyst | Verification | `PASS` | WB-009, WB-010, `06_BUILD.md`, `07_REVIEW.md`, commit comparison | Correction verified |
+| 2026-06-24 | Orchestrator | Verification | Work Block closed | Acceptance criteria checked | Core wording chain ready for next planning decision |
 
 ## Verification report
 
-- Verdict:
+- Verdict: `PASS`
 - Evidence:
+  - `WB-010` exists and records Review verdict `APPROVE`.
+  - `WB-009` exists and has status `Complete`.
+  - `06_BUILD.md` Risks and Stop conditions reference `RISK_TIERING.md` Tier 2 or Tier 3 triggers.
+  - `07_REVIEW.md` Stage Result description includes changed files, evidence, checks, deviations, and risks.
+  - Changed-file comparison from WB-010 closeout commit to current main shows only this WB-011 file was added.
 - Limitations:
+  - Verification confirms the bounded wording correction and scope. It does not replace future template-level mechanical validation.
 - Residual risks:
+  - Profiles, adapters, templates, and examples remain deferred until Owner opens the next appropriate planning Work Block.
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: Verification Work Block and Verification Report
 - Files changed:
+  - `docs/plans/WB-011-verify-build-stage-risk-wording-correction.md`
 - Checks run:
+  - read `docs/plans/WB-009-supplement-build-stage-risk-wording-correction.md`
+  - read `docs/plans/WB-010-review-build-stage-risk-wording-correction.md`
+  - read `docs/00_core/stages/06_BUILD.md`
+  - read `docs/00_core/stages/07_REVIEW.md`
+  - compared changed-file scope from WB-010 closeout commit to current main
 - Review verdict: `APPROVE` from WB-010
-- Verification verdict:
-- Deviations:
+- Verification verdict: `PASS`
+- Deviations: none
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - profiles, adapters, templates, and examples remain intentionally deferred
+- Required decisions: Owner should choose the next planning direction
+- Next owner/action: recommended next Work Block is a planning Work Block for either Profiles, Templates, or the next core layer the Owner chooses
