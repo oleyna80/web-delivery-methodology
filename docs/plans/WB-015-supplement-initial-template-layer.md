@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -75,14 +75,14 @@ The initial template layer has the missing Stage Result envelope fields, Release
 
 ## Acceptance criteria
 
-- [ ] `STAGE_RESULT.md` includes explicit fields for `Execution state`, `Outcome or verdict`, `Files changed`, and `Required decisions`.
-- [ ] `RELEASE_HANDOFF.md` includes explicit fields for prerequisites, rollback or recovery path, monitoring path, and support path.
-- [ ] `IMPROVEMENT_RECORD.md` includes an explicit field for escalation or restricted-risk findings.
-- [ ] `WORK_BLOCK.md` includes a common `Artifact metadata` block or clearly documents its exception.
-- [ ] `WORK_BLOCK.md` shows or points to canonical status/state choices instead of only a static `Draft` value.
-- [ ] Changed files remain inside the approved write-set.
-- [ ] No core governance file is edited.
-- [ ] No profile-, adapter-, example-, tool-, vendor-, framework-, deployment-, product-, or application-specific behavior is added.
+- [x] `STAGE_RESULT.md` includes explicit fields for `Execution state`, `Outcome or verdict`, `Files changed`, and `Required decisions`.
+- [x] `RELEASE_HANDOFF.md` includes explicit fields for prerequisites, rollback or recovery path, monitoring path, and support path.
+- [x] `IMPROVEMENT_RECORD.md` includes an explicit field for escalation or restricted-risk findings.
+- [x] `WORK_BLOCK.md` includes a common `Artifact metadata` block or clearly documents its exception.
+- [x] `WORK_BLOCK.md` shows or points to canonical status/state choices instead of only a static `Draft` value.
+- [x] Changed files remain inside the approved write-set.
+- [x] No core governance file is edited.
+- [x] No profile-, adapter-, example-, tool-, vendor-, framework-, deployment-, product-, or application-specific behavior is added.
 
 ## Risks
 
@@ -117,16 +117,30 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-24 | Owner | Review -> Build | Approved WB-015 | Chat request: `начинай WB-015 — Supplement Initial Template Layer` | Execute bounded supplement |
 | 2026-06-24 | Orchestrator | Build | Work Block opened | `docs/plans/WB-015-supplement-initial-template-layer.md` | Correct four templates |
+| 2026-06-24 | Producer / Documentation Maintainer | Build | Corrections applied | Four subject templates | Run checks and close |
+| 2026-06-24 | Orchestrator | Build | Work Block closed | Changed-file comparison and leakage search | Route back to Review |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: template supplement corrections and WB-015 closeout
 - Files changed:
+  - `docs/03_templates/execution/STAGE_RESULT.md`
+  - `docs/03_templates/release/RELEASE_HANDOFF.md`
+  - `docs/03_templates/improvement/IMPROVEMENT_RECORD.md`
+  - `docs/03_templates/execution/WORK_BLOCK.md`
+  - `docs/plans/WB-015-supplement-initial-template-layer.md`
 - Checks run:
-- Review verdict:
-- Verification verdict:
-- Deviations:
+  - read four subject templates before correction
+  - read `STAGE_CONTRACT.md` Stage Result envelope
+  - read `WORK_BLOCK_CONTRACT.md` canonical state list
+  - compared changed files from WB-014 closeout commit to current main
+  - searched for explicit leakage terms
+- Review verdict: pending follow-up Review
+- Verification verdict: pending
+- Deviations: none
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - corrections require independent Review before template-layer Verification
+  - future Review should confirm the added fields satisfy WB-014 F-001 through F-005 without over-constraining future profiles
+- Required decisions: Owner approval to open follow-up Review
+- Next owner/action: create `WB-016 — Review Initial Template Layer Supplement`
