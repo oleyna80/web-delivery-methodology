@@ -1,12 +1,23 @@
 # Template: Work Block
 
+## Artifact metadata
+
+- Artifact: Work Block
+- Status: Draft
+- Producing stage: Any execution stage
+- Semantic owner: Orchestrator
+- Primary consumers: Assigned role, Reviewer, Verifier
+- Canonical path: `docs/03_templates/execution/WORK_BLOCK.md`
+
 ## Work Block ID and title
 
 `WB-XXX — <short title>`
 
 ## Status
 
-Draft
+Select one canonical state:
+
+`Proposed | Draft | Ready | In Progress | In Review | Supplement Required | Reconsider Required | In Verification | Verified | Awaiting Owner Decision | Complete | Blocked | Superseded | Cancelled`
 
 ## Lifecycle stage
 
