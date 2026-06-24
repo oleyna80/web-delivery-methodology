@@ -43,6 +43,13 @@ Record feedback, lessons, and candidate follow-up work after a completed outcome
 - Suggested risk tier:
 - Dependencies:
 
+## Escalation and restricted risk
+
+- Escalation needed:
+- Restricted-risk finding:
+- Required authority or owner:
+- Routing note:
+
 ## Routing recommendation
 
 - Recommended stage:
@@ -54,6 +61,7 @@ Record feedback, lessons, and candidate follow-up work after a completed outcome
 - [ ] Source is recorded.
 - [ ] Evidence and limitations are explicit.
 - [ ] Candidate follow-up is separated from approved scope.
+- [ ] Escalation or restricted-risk finding is explicitly recorded when present.
 - [ ] Routing recommendation is recorded.
 - [ ] Product Owner decision is recorded before new work begins.
 
