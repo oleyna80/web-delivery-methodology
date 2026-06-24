@@ -88,6 +88,7 @@ This profile must not omit:
 ## Approval gates
 
 - Product intent and scope: Product Owner.
+- Architecture approval: Architecture Owner when Solution Architecture is required.
 - Visual approval: Owner or delegated Design Authority.
 - Review verdict: Reviewer.
 - Verification verdict: Verifier.
