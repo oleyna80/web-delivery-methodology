@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -86,14 +86,14 @@ Thin, tool-agnostic, profile-neutral Markdown templates for all registry-defined
 
 ## Acceptance criteria
 
-- [ ] All planned template paths from `ARTIFACT_REGISTRY.md` are created.
-- [ ] Templates are thin Markdown skeletons, not product examples.
-- [ ] Templates preserve canonical ownership and status semantics.
-- [ ] Templates include inputs and authority sections where relevant.
-- [ ] Templates include evidence, decision, acceptance, review, or verification sections where relevant.
-- [ ] No profile-, adapter-, example-, tool-, vendor-, framework-, deployment-, product-, or application-specific behavior is added.
-- [ ] Core governance files are not modified.
-- [ ] Changed files remain inside the approved write-set.
+- [x] All planned template paths from `ARTIFACT_REGISTRY.md` are created.
+- [x] Templates are thin Markdown skeletons, not product examples.
+- [x] Templates preserve canonical ownership and status semantics.
+- [x] Templates include inputs and authority sections where relevant.
+- [x] Templates include evidence, decision, acceptance, review, or verification sections where relevant.
+- [x] No profile-, adapter-, example-, tool-, vendor-, framework-, deployment-, product-, or application-specific behavior is added.
+- [x] Core governance files are not modified.
+- [x] Changed files remain inside the approved write-set.
 
 ## Risks
 
@@ -128,16 +128,39 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-24 | Owner | Planning -> Build | Approved WB-013 | Chat request: `Запускай WB-013 — Create Initial Template Layer` | Create initial template layer |
 | 2026-06-24 | Orchestrator | Build | Work Block opened | `docs/plans/WB-013-create-initial-template-layer.md` | Create templates |
+| 2026-06-24 | Producer / Documentation Maintainer | Build | Templates created | `docs/03_templates/**` | Run checks and close |
+| 2026-06-24 | Orchestrator | Build | Work Block closed | Changed-file comparison and leakage search | Route to Review |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: initial template layer and WB-013 closeout
 - Files changed:
+  - `docs/03_templates/intake/PROJECT_INTAKE.md`
+  - `docs/03_templates/product/PROJECT_BRIEF.md`
+  - `docs/03_templates/architecture/SOLUTION_BRIEF.md`
+  - `docs/03_templates/ux/UX_SPECIFICATION.md`
+  - `docs/03_templates/design/DESIGN_SPECIFICATION.md`
+  - `docs/03_templates/design/DESIGN_REVIEW.md`
+  - `docs/03_templates/implementation/IMPLEMENTATION_PLAN.md`
+  - `docs/03_templates/execution/WORK_BLOCK.md`
+  - `docs/03_templates/execution/STAGE_RESULT.md`
+  - `docs/03_templates/review/ENGINEERING_REVIEW.md`
+  - `docs/03_templates/review/VISUAL_REVIEW.md`
+  - `docs/03_templates/verification/VERIFICATION_REPORT.md`
+  - `docs/03_templates/release/RELEASE_HANDOFF.md`
+  - `docs/03_templates/improvement/IMPROVEMENT_RECORD.md`
+  - `docs/plans/WB-013-create-initial-template-layer.md`
 - Checks run:
-- Review verdict:
-- Verification verdict:
+  - compared changed files from WB-012 closeout commit to current main
+  - searched for explicit tool, vendor, framework, provider, or application-specific leakage terms
+- Review verdict: pending independent Review
+- Verification verdict: pending
 - Deviations:
+  - `STAGE_RESULT.md`, `RELEASE_HANDOFF.md`, and `IMPROVEMENT_RECORD.md` were created with simplified wording after connector safety filters rejected more detailed wording.
+  - The simplification preserved the intended artifact purpose and avoided product-specific examples.
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - templates require independent Review before they become authoritative for profiles, adapters, or examples
+  - future Review should check section consistency across all templates
+- Required decisions: Owner approval to open Review for WB-013 output
+- Next owner/action: create `WB-014 — Review Initial Template Layer`
