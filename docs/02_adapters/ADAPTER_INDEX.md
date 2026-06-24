@@ -24,9 +24,11 @@ Concrete adapters listed here are authoritative only within their stated limitat
 
 ## Draft concrete adapters
 
-No draft concrete adapter is currently listed.
-
 Draft adapters are not authoritative.
+
+| Adapter ID | File | Status | Supported profiles | Supported stages | Supported roles | Max risk tier without extra controls | Required Owner approvals | Review WB | Verification WB | Limitations |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `CONVERSATION_ORCHESTRATOR` | `docs/02_adapters/CONVERSATION_ORCHESTRATOR.md` | Draft | `LOW_RISK_LANDING_PAGE`, `STANDARD_BUSINESS_WEBSITE`, `WEB_APPLICATION` | Intake, Product Definition support, Architecture/UX/UI routing, Implementation Planning, Build coordination, Review evidence intake, Verification evidence intake, Release Handoff support, Improvement | Orchestrator-support, Producer, Specialist, conditional read-only Reviewer, conditional read-only Verifier | Tier 1 | Required for release/deployment decisions, destructive actions, restricted actions, material residual risk, business-scope changes, sensitive or regulated work, and role reassignment that could compromise independence | Pending | Pending | Generic conversational coordination environment only; not authoritative until Review and Verification pass; no repository write authority by default; no vendor/product/model/provider assumptions |
 
 ## Candidate adapter categories
 
@@ -34,7 +36,6 @@ These categories are planning candidates only. They are not concrete adapters.
 
 | Candidate category | Purpose | Status | Notes |
 | --- | --- | --- | --- |
-| Conversation Orchestrator adapter | Map conversational assistant environments to Orchestrator, Producer, Documentation Analyst, or planning-support roles | Candidate | Must not treat chat history as approval evidence |
 | Design/Frontend Agent adapter | Map design-generation or frontend-focused environments to UI Design, Visual Review, and frontend Build support | Candidate | Must distinguish Design Authority, Visual Review, and Build roles |
 | Connector/Repository API adapter | Map repository connector actions to read/write constraints, audit evidence, and Work Block file maintenance | Candidate | Must prevent unauthorized audit-trail mutation and uncontrolled writes |
 | Local CLI Agent adapter | Map terminal or local-repository execution environments to bounded Build, Review, or Verification assignments | Candidate | Create only if distinct from repository coding adapter |
@@ -85,4 +86,4 @@ Use these adapter status values:
 
 ## Current next action
 
-Use the verified `REPOSITORY_CODING_AGENT` adapter for repository-aware coding assignments where it fits the active Work Block, profile, risk tier, and role constraints. Plan the next concrete adapter only through a new Work Block.
+Review the `CONVERSATION_ORCHESTRATOR` draft adapter before Verification or authoritative use.
