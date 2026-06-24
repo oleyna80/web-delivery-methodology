@@ -2,7 +2,7 @@
 
 ## Status
 
-In Progress
+Complete
 
 ## Lifecycle stage
 
@@ -76,27 +76,27 @@ Repository Coding Agent adapter draft exists, is listed in `ADAPTER_INDEX.md` as
 
 ## Acceptance criteria
 
-- [ ] `docs/02_adapters/REPOSITORY_CODING_AGENT.md` exists.
-- [ ] Adapter follows `ADAPTER_CONTRACT.md` required section structure.
-- [ ] Adapter status is `Draft`.
-- [ ] Adapter is generic and contains no vendor/product/model/provider assumptions.
-- [ ] Adapter preserves core role authority and separation of duties.
-- [ ] Adapter preserves Work Block authority over actual read scope and write-set.
-- [ ] Adapter preserves risk-tier controls and Owner approval requirements.
-- [ ] Adapter defines evidence returned, stop conditions, limitations, and handoff format.
-- [ ] `ADAPTER_INDEX.md` contains a non-authoritative Draft entry for the adapter.
-- [ ] Adapter is not marked authoritative.
-- [ ] No examples are created.
-- [ ] No core/profile/template files are edited.
-- [ ] Changed files remain inside approved write-set.
+- [x] `docs/02_adapters/REPOSITORY_CODING_AGENT.md` exists.
+- [x] Adapter follows `ADAPTER_CONTRACT.md` required section structure.
+- [x] Adapter status is `Draft`.
+- [x] Adapter is generic and contains no vendor/product/model/provider assumptions.
+- [x] Adapter preserves core role authority and separation of duties.
+- [x] Adapter preserves Work Block authority over actual read scope and write-set.
+- [x] Adapter preserves risk-tier controls and Owner approval requirements.
+- [x] Adapter defines evidence returned, stop conditions, limitations, and handoff format.
+- [x] `ADAPTER_INDEX.md` contains a non-authoritative Draft entry for the adapter.
+- [x] Adapter is not marked authoritative.
+- [x] No examples are created.
+- [x] No core/profile/template files are edited.
+- [x] Changed files remain inside approved write-set.
 
 ## Checks and evidence
 
-- Create the adapter file.
-- Add Draft index entry.
-- Compare changed files against approved write-set.
-- Confirm no examples are created.
-- Confirm no core/profile/template files are changed.
+- Created the adapter file.
+- Added Draft index entry.
+- Compared changed files against approved write-set.
+- Confirmed no examples are created by approved write-set scope.
+- Confirmed no core/profile/template files are changed by approved write-set scope.
 
 ## Stop conditions
 
@@ -121,16 +121,31 @@ Only the Orchestrator updates this table.
 | --- | --- | --- | --- | --- | --- |
 | 2026-06-24 | Owner | Planning -> Build | Approved WB-029 | Chat request: `подтверждаю WB-029 — Create Repository Coding Agent Adapter` | Create draft adapter |
 | 2026-06-24 | Orchestrator | Build | Work Block opened | `docs/plans/WB-029-create-repository-coding-agent-adapter.md` | Create adapter file |
+| 2026-06-24 | Producer / Documentation Maintainer | Build | Draft adapter created | `docs/02_adapters/REPOSITORY_CODING_AGENT.md` | Add Draft index entry |
+| 2026-06-24 | Producer / Documentation Maintainer | Build | Draft index entry added | `docs/02_adapters/ADAPTER_INDEX.md` | Check scope |
+| 2026-06-24 | Orchestrator | Build | Scope check passed | changed-file comparison from WB-028 closeout to current main | Route to Review |
 
 ## Closeout
 
-- Final status:
-- Artifacts created or changed:
+- Final status: Complete
+- Artifacts created or changed: Repository Coding Agent adapter draft, Adapter Index draft entry, WB-029 closeout
 - Files changed:
+  - `docs/02_adapters/REPOSITORY_CODING_AGENT.md`
+  - `docs/02_adapters/ADAPTER_INDEX.md`
+  - `docs/plans/WB-029-create-repository-coding-agent-adapter.md`
 - Checks run:
-- Review verdict:
-- Verification verdict:
-- Deviations:
+  - created `REPOSITORY_CODING_AGENT.md` as Draft
+  - added non-authoritative Draft entry to `ADAPTER_INDEX.md`
+  - compared changed files from WB-028 closeout commit to current main
+  - confirmed changed files remain inside approved write-set
+  - confirmed no examples were created by approved write-set scope
+  - confirmed no core/profile/template files were changed by approved write-set scope
+- Review verdict: pending
+- Verification verdict: pending
+- Deviations: none
 - Residual risks:
-- Required decisions:
-- Next owner/action:
+  - adapter requires independent Review
+  - adapter requires Verification before it can become authoritative
+  - examples remain deferred
+- Required decisions: Owner approval to open follow-up Review
+- Next owner/action: create `WB-030 — Review Repository Coding Agent Adapter`
