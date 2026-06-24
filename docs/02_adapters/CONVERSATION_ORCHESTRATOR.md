@@ -7,11 +7,12 @@
 | Adapter ID | `CONVERSATION_ORCHESTRATOR` |
 | Adapter name | Conversation Orchestrator Adapter |
 | Adapter type or category | Conversational coordination environment |
-| Status | Draft |
+| Status | Verified |
 | Supported tool or execution-environment category | Conversational assistant environment for methodology coordination, Work Block planning, role routing, prompt preparation, and evidence intake |
 | Producing Work Block | `WB-034 — Create Conversation Orchestrator Adapter` |
-| Review Work Block | Pending |
-| Verification Work Block | Pending |
+| Review Work Block | `WB-035 — Review Conversation Orchestrator Adapter` |
+| Verification Work Block | `WB-036 — Verify Conversation Orchestrator Adapter` |
+| Promotion Work Block | `WB-037 — Promote Conversation Orchestrator Adapter` |
 
 ## Purpose
 
@@ -277,6 +278,6 @@ For Verification, use verdicts: `PASS` or `FAIL`.
 
 ## Current status
 
-Draft.
+Verified.
 
-This adapter is not authoritative until it passes independent Review and Verification and `ADAPTER_INDEX.md` records it as verified or authoritative according to index rules.
+This adapter is authoritative only as listed in `ADAPTER_INDEX.md` and remains subordinate to core governance, profiles, templates, verified adapters, and the active Work Block.
